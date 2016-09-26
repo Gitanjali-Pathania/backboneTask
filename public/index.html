@@ -1,0 +1,47 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<!-- <meta charset="UTF-8"> -->
+	<title>NetraDyne App</title>
+</head>
+<body>
+	<div class="container">
+		<h1 align="center">TODO</h1>
+
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Title</th>
+				</tr>
+				<tr>
+					<td><input class="form-control title-input" style="width:200px;"></td>
+					<td><button class="btn btn-primary add-blog">Add</button></td>
+				</tr>
+			</thead>
+			<tbody class="blogs-list"></tbody>
+		</table>
+	</div>
+	<script type="text/template" class="blogs-list-template">
+	// <td><span class="author"><%= author %></span></td>
+	<td><span class="title" style="margin-left:-490px;"><%= title %></span></td>
+	<td  id="fin" style="display:none"><span  style="margin-left:-490px;"><strike><%= title %></strike></span></td>
+	// <td><span class="url"><%= url %></span></td>
+	<td><button class="btn btn-primary finish-blog">Finish</button><button class="btn btn-warning edit-blog">Edit</button> <button class="btn btn-danger delete-blog">Delete</button><button class="btn btn-success update-blog" style="display:none">Update</button> <button class="btn btn-danger cancel" style="display:none">Cancel</button></td>
+
+	</script>
+	<script type="text/template" class="blogs-list-template1">
+	// <td><span class="author"><%= author %></span></td>
+	
+	<td  id="fin" ><span  style="margin-left:-490px;"><strike><%= title %></strike></span></td>
+	// <td><span class="url"><%= url %></span></td>
+	<td><button class="btn btn-primary finish-blog">Finish</button><button class="btn btn-warning edit-blog">Edit</button> <button class="btn btn-danger delete-blog">Delete</button><button class="btn btn-success update-blog" style="display:none">Update</button> <button class="btn btn-danger cancel" style="display:none">Cancel</button></td>
+
+	</script>
+	
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/underscore/underscore.js"></script>
+	<script src="bower_components/backbone/backbone.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
